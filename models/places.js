@@ -13,4 +13,4 @@ var PlaceSchema = new Schema ({
 
 var Place = mongoose.model('Place', PlaceSchema);
 
-module.exports.Place = require("./places.js")
+module.exports = Place;

@@ -5,9 +5,8 @@ var mongoose = require('mongoose'),
 var ConcertSchema = new Schema ({
   venue: String,
   artist: String,
-  city: String,
 });
 
 var Concert = mongoose.model('Concert', ConcertSchema);
 
-module.exports.Concert = require("./concerts.js")
+module.exports = Concert;

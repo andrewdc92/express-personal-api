@@ -37,7 +37,7 @@ var db = require('./models');
   {
       name: "Andrew Cordivari",
       personalSiteLink: "https://github.com/andrewdc92/andrewdc92.github.io",
-      githubLink: "https://github.com/andrewdc92",
+      githubLink: "https://andrewdc92.github.io/",
       currentCity: "San Francisco",
       pets:[{name: "Kevin", species: "cat", breed: "Abyssinian", color: "Orange/Striped"}],
       familyMembers: [
