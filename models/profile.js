@@ -20,8 +20,8 @@ var mongoose = require('mongoose'),
  var profile_data =
  {
      name: "Andrew Cordivari",
-     documentationUrl: "https://github.com/andrewdc92/andrewdc92.github.io",
-     baseUrl: "https://floating-crag-42747.herokuapp.com/",
+     personalSiteLink: "https://github.com/andrewdc92/andrewdc92.github.io",
+     githubLink: "https://github.com/andrewdc92",
      currentCity: "San Francisco",
      pets:[{name: "Kevin", species: "cat", breed: "Abyssinian", color: "Orange/Striped"}],
      familyMembers: [
