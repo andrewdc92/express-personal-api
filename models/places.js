@@ -1,8 +1,7 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
-var PlaceSchema = new Schema ({
-  country: String,
+var PlaceSchema = new Schema({
   city: String,
   state: String,
   // gps: {

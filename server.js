@@ -85,9 +85,20 @@ app.get('/api/profile', function(req, res){
       res.json(profile_data);
   });
 
-app.get('/api/concerts'), function(req, res){
-  res.json()
-}
+app.get('/api/concerts', function(req, res){
+  db.Concert.find({}, function(err, concerts) {
+    console.log(concerts);
+  res.json(concerts);
+  });
+});
+
+app.get('/api/places', function(req, res){
+  db.Place.find({}, function(err, places) {
+    console.log(places);
+  res.json(places);
+  });
+});
+
 
 app.post('/api/concerts', function (req, res) {
   // create new book with form data (`req.body`)
@@ -97,6 +108,7 @@ app.post('/api/concerts', function (req, res) {
     city: req.body.city,
   });
 });
+
 
 app.post('/api/places', function (req, res) {
   // create new book with form data (`req.body`)

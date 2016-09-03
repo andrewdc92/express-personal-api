@@ -30,7 +30,6 @@ var place_list = [
   {
   state: "New Jersey",
   city: "Newark",
-  // gps:
   },
   {
   state: "Florida",
@@ -40,7 +39,8 @@ var place_list = [
   state: "New York",
   city: "Bronx",
   },
-]
+];
+
 db.Concert.create(concert_list, function(err, concert){
   if (err){
     return console.log("Error:", err);

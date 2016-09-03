@@ -24,7 +24,21 @@
           <h1>Under Construction</h1>
           <h4><a href="/api">Read My API Documentation</a></h4>
         </div>
-      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <form action="/api/concerts" method="GET">
+            <div>
+                <label for="artist">Artist:</label>
+                <input type="text" id="name" name="user_artist"/>
+            </div>
+            <div>
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue_id" name="user_artist"/>
+            </div>
+            <div class="button">
+                <button type="submit">Add a new concert</button>
+            </div>
+          </form>
+        </div>
     </div>
   </body>
 </html>
