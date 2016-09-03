@@ -4,12 +4,28 @@ var mongoose = require('mongoose'),
 var PlaceSchema = new Schema({
   city: String,
   state: String,
-  // gps: {
-  //   lat: Number,
-  //   lng: Number,
-  // }
+  country: String,
 });
 
 var Place = mongoose.model('Place', PlaceSchema);
 
 module.exports = Place;
+
+
+// var place_list = [
+//   {
+//   state: "New Jersey",
+//   city: "Newark",
+//   country: "United States",
+//   },
+//   {
+//   state: "Florida",
+//   city: "West Palm Beach",
+//   country: "United States",
+//   },
+//   {
+//   state: "New York",
+//   city: "Bronx",
+//   country: "United States",
+//   },
+// ];

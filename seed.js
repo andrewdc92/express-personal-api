@@ -30,14 +30,17 @@ var place_list = [
   {
   state: "New Jersey",
   city: "Newark",
+  country: "United States",
   },
   {
   state: "Florida",
   city: "West Palm Beach",
+  country: "United States",
   },
   {
   state: "New York",
   city: "Bronx",
+  country: "United States",
   },
 ];
 

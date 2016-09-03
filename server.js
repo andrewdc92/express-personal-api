@@ -23,15 +23,6 @@ app.use(function(req, res, next) {
 var mongoose = require('mongoose');
 var db = require('./models');
 
-// var concert = new Object();
-//   concert.venue = "Roseland Ballroom";
-//   concert.artist = "Lamb of God";
-//   concert.city = "New York City";
-//
-// var place = new Object();
-//   place.state = "New Jersey";
-//   place.city = "Newark";
-  // place.gps = 40.7357° N, 74.1724° W;
 
   var profile_data =
   {
