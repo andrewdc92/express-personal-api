@@ -4,58 +4,102 @@
 var db = require('./models');
 
 
+var place_list = [
+  {
+  city: "New York City",
+  state: "New York",
+  country: "United States",
+  },
+  {
+  city: "New York City",
+  state: "New York",
+  country: "United States",
+  },
+  {
+  city: "Brooklyn",
+  state: "New York",
+  country: "United States",
+  },
+  {
+  city: "New York City",
+  state: "New York",
+  country: "United States",
+  }
+];
 
 var concert_list = [
   {
-  venue: "Roseland Ballroom",
   artist: "Lamb of God",
+  venue: "Roseland Ballroom",
+  location: "New York City"
   },
   {
-    venue: "Terminal 5",
     artist: "Ratatat",
+    venue: "Terminal 5",
+    location: "New York City"
   },
   {
+    artist: "Jack Beats, AC Slater",
     venue: "Verboten",
-    artist: "Jack Beats, AC Slater"
+    location: "New York City"
   },
   {
-    venue: "Irving Plaza",
     artist: "Twiddle",
+    venue: "Irving Plaza",
+    location: "New York City"
   },
 ];
 
 
 
-var place_list = [
-  {
-  state: "New Jersey",
-  city: "Newark",
-  country: "United States",
-  },
-  {
-  state: "Florida",
-  city: "West Palm Beach",
-  country: "United States",
-  },
-  {
-  state: "New York",
-  city: "Bronx",
-  country: "United States",
-  },
-];
 
-db.Concert.create(concert_list, function(err, concert){
+
+
+db.Place.create(place_list, function(err, place){
   if (err){
-    return console.log("Error:", err);
+    return console.log("Error", err)
   }
-  console.log(concert_list);
-  // db.Concert.remove({}, function(err, concerts){
-  //     console.log('removed all concerts');
-  //     db.Concert.create(concert_list, function(err, concert){
-  //       if (err){
-  //         return console.log("Error:", err);
-  //       }
-  //       return console.log("concert created!")
-  //     });
-      process.exit()
-    });
+// });
+// db.Concert.create(concert_list, function(err, concert){
+//   if (err){
+//     return console.log("Error:", err);
+//   }
+
+// db.Place.create(place_list, function(err, place){
+//   if (err){
+//     return console.log("Error", err)
+//   }
+// });
+  process.exit();
+});
+// db.Concert.create(concert_list, function(err, concert){
+//   if (err){
+//     return console.log("Error:", err);
+//   }
+  // console.log(concert_list);
+//     db.Place.remove({}, function(err, places) {
+//     console.log('removed all places');
+//     db.Place.create(place_list, function(err, places){
+//       if (err) {
+//         console.log(err);
+//         return;
+//       }
+//       console.log('recreated all authors');
+//       console.log("created", authors.length, "authors");
+//     db.Concert.remove({}, function(err, concerts){
+//         console.log('removed all concerts');
+//         concert_list.forEach(function (concertData) {
+//         var concert = new db.Concert({
+//           artist: concertData.artist,
+//           venue: concertData.venue,
+//         });
+//       });
+//     });
+//   });
+// });
+      // db.Concert.create(concert_list, function(err, concert){
+      //   if (err){
+      //     return console.log("Error:", err);
+      //   }
+      //   return console.log("concert created!")
+      // });

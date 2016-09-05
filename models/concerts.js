@@ -3,8 +3,13 @@ var mongoose = require('mongoose'),
 
 // pulling in data for a bunch of the concerts I attended in NYC
 var ConcertSchema = new Schema ({
-  venue: String,
   artist: String,
+  venue: String,
+  location: {
+    type: Schema.Types.ObjectId,
+    ref: 'Place'
+  },
+  image: String,
 });
 
 var Concert = mongoose.model('Concert', ConcertSchema);
